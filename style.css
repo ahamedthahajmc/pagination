@@ -8,10 +8,7 @@ body{
 	background-color: teal;
 	margin: 10px;
 }
-.prev:hover,.next:hover{
-	background-color: #22ecb4 !important;
-	color: teal !important;
-}
+
 li{
 	cursor: pointer;
 }
@@ -58,7 +55,11 @@ table{
 	border-collapse: collapse;
 	margin: 0 auto;
 }
-
+@media screen and (max-width: 320px){
+	.site ul li{
+		font-size: 15px;
+	}
+}
 @media screen and (min-width: 321px){
 	.site ul{
 		width: 325px;
@@ -75,4 +76,8 @@ table{
 		margin-left: auto;
 		width: 360px;
 	}
+}
+.prev:hover,.next:hover,li.dot:hover, li.dot:active{
+	background-color: #22ecb4 !important;
+	color: teal !important;
 }
