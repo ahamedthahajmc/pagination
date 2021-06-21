@@ -34,7 +34,7 @@ function pagination(page,totalPage){
 	if(page > 2){
 		liTag +=`<li onclick="pagination(1,${totalPage})" value="1">1</li>`;
 		if(page > 3){
-			liTag +=`<li>...</li>`;
+			liTag +=`<li class="dot">...</li>`;
 		}
 	}
 
@@ -58,7 +58,7 @@ function pagination(page,totalPage){
 
 	if(page < totalPage - 2){
 		if(page < totalPage - 3 ){
-			liTag += `<li>...</li>`;
+			liTag += `<li class="dot">...</li>`;
 		}	
 		liTag +=`<li onclick="pagination(${totalPage},totalPage)">${totalPage}</li>`;
 	}
