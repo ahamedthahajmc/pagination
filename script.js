@@ -8,7 +8,7 @@ site.append(ulTag);
 function getData(pageNum){
 	let tData = '';
 	tData +=`<tr><th>Name</th><th>Profile Picture</th></tr>`;
-let userData = fetch("https://60ca0dad772a7600172052ea.mockapi.io/website",{method:"GET"})
+let userData = fetch("https://60ca0dad772a7600172052ea.mockapi.io/My_app",{method:"GET"})
 .then((data)=> data.json())
 .then((ele)=>{
 	for(var i=0+(5*(pageNum-1));i<=(pageNum*5)-1;i++){
